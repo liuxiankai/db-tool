@@ -1,0 +1,17 @@
+identity:
+  author: liuxiankai
+  name: db-tool
+  label:
+    en_US: db-tool
+    zh_Hans: db-tool
+    pt_BR: db-tool
+  description:
+    en_US: db plugin
+    zh_Hans: db plugin
+    pt_BR: db plugin
+  icon: icon.svg
+tools:
+  - tools/db-tool.yaml
+extra:
+  python:
+    source: provider/db-tool.py

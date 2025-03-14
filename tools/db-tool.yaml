@@ -1,0 +1,95 @@
+identity:
+  name: db-tool
+  author: liuxiankai
+  label:
+    en_US: db-tool
+    zh_Hans: db-tool
+    pt_BR: db-tool
+description:
+  human:
+    en_US: db plugin
+    zh_Hans: db plugin
+    pt_BR: db plugin
+  llm: db plugin
+parameters:
+  - name: query_sql
+    type: string
+    required: true
+    label:
+      en_US: Query Sql
+      zh_Hans: 查询 Sql
+      pt_BR: Query Sql
+    human_description:
+      en_US: use for query database
+      zh_Hans: 用于查询数据库的 sql
+      pt_BR: use for query database
+    llm_description: 用于查询数据库的 sql
+    form: llm
+  - name: host
+    type: string
+    required: true
+    label:
+      en_US: database host
+      zh_Hans: 数据库地址
+      pt_BR: database host
+    human_description:
+      en_US: database host
+      zh_Hans: 数据库地址
+      pt_BR: database host
+    llm_description: 数据库地址
+    form: form
+  - name: port
+    type: number
+    required: true
+    label:
+      en_US: database port
+      zh_Hans: 数据库端口
+      pt_BR: database port
+    human_description:
+      en_US: database port
+      zh_Hans: 数据库端口
+      pt_BR: database port
+    llm_description: 数据库端口
+    form: form
+  - name: dbname
+    type: string
+    required: true
+    label:
+      en_US: dbname
+      zh_Hans: 数据库名称
+      pt_BR: dbname
+    human_description:
+      en_US: dbname
+      zh_Hans: dbname
+      pt_BR: dbname
+    llm_description: dbname
+    form: form
+  - name: username
+    type: string
+    required: true
+    label:
+      en_US: username
+      zh_Hans: 用户名
+      pt_BR: username
+    human_description:
+      en_US: username
+      zh_Hans: 用户名
+      pt_BR: username
+    llm_description: 用户名
+    form: form
+  - name: password
+    type: string
+    required: true
+    label:
+      en_US: password
+      zh_Hans: 密码
+      pt_BR: password
+    human_description:
+      en_US: password
+      zh_Hans: 密码
+      pt_BR: password
+    llm_description:  密码
+    form: form
+extra:
+  python:
+    source: tools/db-tool.py
